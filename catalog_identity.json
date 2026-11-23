@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Persona 2 - Eternal Punishment",
+    "id": "SLUS-01158",
+    "boot_exe": "SLUS_011.58"
+  },
+  "marketing": {
+    "description": "",
+    "publisher": "",
+    "year": "",
+    "region": "USA",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "Persona 2 - Eternal Punishment (USA).cue",
+    "bin_name": "Persona 2 - Eternal Punishment (USA).bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 724827600,
+      "md5": "32e245a231f145587085f947f8634145",
+      "sha1": "05bb29e1a491d331fd47b1930eb5e186202684cd",
+      "crc32": "e390b937"
+    },
+    "disc_fp": "ea6425dd2f44069e50a31238d517a88bcfce3845d3a0faa2852d0718ce4ecb5e"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x80042BE0",
+    "text_size": "0x001C6800",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 935,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK — Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
